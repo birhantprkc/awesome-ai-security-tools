@@ -192,6 +192,8 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [nono](https://github.com/nolabs-ai/nono) · [gate.cat](https://github.com/BGMLAI/gate.cat)
 - **[ADR](https://github.com/uber/ADR)** 🟢🔬 — Agentic AI Detection and Response system combining cross-client agent telemetry, ADR-Bench security scenarios, and a dual-agent detector for suspicious intent, tool use, and execution traces. *(Uber)* — **note:** deployed at Uber and published with an MLSys 2026 paper; the open release includes the Sensor, benchmark, and Detector, but not ADR Prevention or the offline ADR Explorer. Default detector configurations require model-provider credentials. *(★ 1,435 · updated 2026-08-10)*
   - **Related:** [Pipelock](https://github.com/luckyPipewrench/pipelock) · [AgentLock](https://github.com/webpro255/agentlock)
+- **[xaidr](https://github.com/delphisecurity/xaidr)** 🟢 — In-process runtime security sensor for AI agents that inspects input, tool calls, output, and agent-to-agent envelopes inside the agent process, with structured shell-command classification, YAML policy, privilege tiers, an opt-in circuit breaker, and OpenTelemetry export. *(Delphi Security)*
+  - **Related:** [agentguard](https://github.com/GoPlusSecurity/agentguard) · [defenseclaw](https://github.com/cisco-ai-defense/defenseclaw)
 
 ---
 
