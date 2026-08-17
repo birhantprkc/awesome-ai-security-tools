@@ -4,6 +4,7 @@ Interesting projects that are not ready for the main awesome list yet. We usuall
 
 ## Candidates
 
+- [Awesome Agentic Engineering](https://github.com/lindixu6-hash/awesome-agentic-engineering) — MIT production-readiness toolkit for AI agents with a score and risk-profile GitHub Action, eight inert prompt-injection fixtures, machine-readable results, and reproducible LangGraph.js evaluations that retain node-linked tool and policy traces. Watch because the project is new with no stars or independent adoption; its public CI evidence is author-operated, and its only adopter is maintained by the same author.
 - [Redcells](https://github.com/awdemos/redcell) — public-beta automated adversarial testing platform for owned or controlled LLMs. Watch because the repository is very new, has no stars yet, and currently has no clear root license file.
 - [Signato](https://github.com/Signato-ai/signato-integrations) — commercial-open confidentiality chamber integrations for Claude Code. Watch because the repository is very new, has no stars yet, and the core engine is proprietary while docs and examples are MIT.
 - [Agent Trust](https://github.com/Rain-ouroboros/agent-trust) — advisory receipt library for AI-agent prompts, actions, scopes, and tool descriptors. Watch because the repository is very new, has no stars yet, and the current PR wording overstates runtime enforcement and packaging status.
