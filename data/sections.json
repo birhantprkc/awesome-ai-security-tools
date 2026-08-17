@@ -1668,6 +1668,25 @@
                 "updated": "2026-08-10",
                 "snapshot": "2026-08-16"
               }
+            },
+            {
+              "name": "xaidr",
+              "repo": "delphisecurity/xaidr",
+              "org": "Delphi Security",
+              "desc": "In-process runtime security sensor for AI agents that inspects input, tool calls, output, and agent-to-agent envelopes inside the agent process, with structured shell-command classification, YAML policy, privilege tiers, an opt-in circuit breaker, and OpenTelemetry export.",
+              "status": [
+                "open_source"
+              ],
+              "related": [
+                {
+                  "label": "agentguard",
+                  "url": "https://github.com/GoPlusSecurity/agentguard"
+                },
+                {
+                  "label": "defenseclaw",
+                  "url": "https://github.com/cisco-ai-defense/defenseclaw"
+                }
+              ]
             }
           ]
         }
