@@ -506,6 +506,8 @@ Tools for attacking and defending LLM applications themselves.
   - **Related:** [HarmBench](https://github.com/centerforaisafety/HarmBench) · [PyRIT](https://github.com/microsoft/PyRIT) · [garak](https://github.com/NVIDIA/garak)
 - **[HiveTrace Red](https://github.com/HiveTrace/HiveTraceRed)** 🟢 — Early-stage LLM red-teaming framework with 80+ attack templates, async evaluation pipelines, WildGuard evaluators, multi-provider support, and HTML reporting. — **note:** young project with limited independent adoption signal. *(★ 29 · updated 2026-08-13)*
   - **Related:** [garak](https://github.com/NVIDIA/garak) · [PyRIT](https://github.com/microsoft/PyRIT) · [promptfoo](https://github.com/promptfoo/promptfoo)
+- **[Sentinel Scan](https://github.com/Ventrova/sentinel-scan-cli)** 🟢 — CLI for authorized LLM red-team audits: prompt injection, jailbreak, and data-leak probes with a scored report. *(Ventrova)*
+  - **Related:** [garak](https://github.com/NVIDIA/garak) · [promptfoo](https://github.com/promptfoo/promptfoo)
 - **[DeepTeam](https://github.com/confident-ai/deepteam)** 🟢 — Open-source framework for red-teaming LLMs and LLM systems across jailbreaks, prompt injection, data leakage, and safety risks. *(★ 2,451 · updated 2026-08-12)*
 - **[Moonshot](https://github.com/aiverify-foundation/moonshot)** 🟢 — Modular tool for benchmarking, red-teaming, and evaluating LLM applications with custom connectors and recipes. *(AI Verify Foundation)* *(★ 347 · updated 2026-02-05)*
 - **[Guardrails AI](https://github.com/guardrails-ai/guardrails)** 🟢 — Python framework for adding input/output guards, validators, structured-output controls, and Guardrails Hub checks to LLM applications. *(Guardrails AI)* *(★ 7,294 · updated 2026-08-14)*
