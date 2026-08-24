@@ -1719,7 +1719,40 @@
                   "label": "ADR",
                   "url": "https://github.com/uber/ADR"
                 }
-              ]
+              ],
+              "metrics": {
+                "stars": 12,
+                "updated": "2026-08-24",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "piighost",
+              "repo": "Athroniaeth/piighost",
+              "desc": "Local runtime pseudonymization layer that replaces detected PII with stable placeholders before model calls and restores the original values in responses and selected tool arguments, with integrations for LangChain, Pydantic AI, LlamaIndex, and OpenAI-compatible clients.",
+              "license": "MIT",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** reversible de-identification, not anonymization; the placeholder mapping remains sensitive, restored tool arguments can contain the original PII, and optional LLM-backed detectors may send content to the configured model provider.",
+              "related": [
+                {
+                  "label": "Kiji",
+                  "url": "https://github.com/Dataiku/kiji-proxy"
+                },
+                {
+                  "label": "onecli",
+                  "url": "https://github.com/onecli/onecli"
+                }
+              ],
+              "metrics": {
+                "stars": 11,
+                "updated": "2026-08-23",
+                "snapshot": "2026-08-24"
+              }
             }
           ]
         }
