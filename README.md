@@ -411,6 +411,7 @@ Two families: (a) LLMs generating harnesses/targets for traditional fuzzing, and
 - **[Fuzz4All](https://github.com/fuzz4all/fuzz4all)** 🟢🔬 — "Universal" LLM-based fuzzer across compilers/languages (ICSE 2024). *(★ 336 · updated 2025-08-11)*
 - **[ChatAFL](https://github.com/ChatAFLndss/ChatAFL)** 🟢🔬 — LLM-guided protocol fuzzing extending AFLNet (NDSS'24). *(★ 392 · updated 2025-06-20)*
 - **[TitanFuzz](https://github.com/ise-uiuc/TitanFuzz)** 🟢🔬⚠️ — First LLM-based fuzzer for PyTorch/TensorFlow (ISSTA'23). *(★ 94 · updated 2023-09-10)*
+- **[Nemesis Forge](https://github.com/eobi/nemesisforge)** 🟢 — Autonomous discovery engine for memory-safety bugs in C/C++: an LLM proposes harnesses and triage routing, and eight deterministic oracles (sanitizer, differential, native-replay, controllability, exploitability, symbolic) decide what is certified. Findings are reported at the rung of an exploitability ladder that the evidence reaches, and every finding states what was **not** established. *(Obi Ebuka David)* — **note:** the model never certifies, so the whole verification path runs with no API key; harness synthesis is the only step that needs one. New project, so few external users yet. *(★ 0 · updated 2026-08-24)*
 
 ### Fuzzing the LLM
 
