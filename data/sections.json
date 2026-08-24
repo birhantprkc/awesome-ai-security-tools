@@ -666,6 +666,91 @@
                 "updated": "2026-04-16",
                 "snapshot": "2026-08-17"
               }
+            },
+            {
+              "name": "Ship Safe",
+              "repo": "asamassekou10/ship-safe",
+              "desc": "Local security CLI for application code, AI-agent and MCP configuration, secrets, dependencies, CI, and cloud/IaC surfaces, with deterministic checks, optional AI-assisted analysis, and SARIF output.",
+              "license": "MIT",
+              "status": [
+                "open_source",
+                "commercial_open"
+              ],
+              "flags": [
+                "commercial_features"
+              ],
+              "note": "— **note:** the MIT CLI works without an account for its core checks; optional AI modes can send selected context to the configured provider, while hosted dashboards and organization workflows are separate commercial features. Coverage and benchmark figures are project-reported.",
+              "related": [
+                {
+                  "label": "SkillTotal",
+                  "url": "https://github.com/pezhik/skilltotal"
+                },
+                {
+                  "label": "agent-audit",
+                  "url": "https://github.com/scadastrangelove/agent-audit"
+                }
+              ],
+              "metrics": {
+                "stars": 827,
+                "updated": "2026-08-24",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "AgentSeal",
+              "repo": "getagentseal/agentseal",
+              "desc": "Agent-security CLI and runtime library for scanning MCP servers, skills, prompts, and configuration, plus local guard and monitoring workflows with optional model-assisted red teaming.",
+              "license": "FSL-1.1-Apache-2.0",
+              "status": [
+                "commercial_open"
+              ],
+              "flags": [
+                "license_caveat",
+                "commercial_features",
+                "requires_api_key"
+              ],
+              "note": "— **note:** source-available under FSL-1.1-Apache-2.0 rather than an OSI-approved open-source license; offline guard and MCP/skill scanning are available locally, while red-team modes require local Ollama or configured provider credentials. Catalog and coverage figures are project-reported.",
+              "related": [
+                {
+                  "label": "agent-scan",
+                  "url": "https://github.com/snyk/agent-scan"
+                },
+                {
+                  "label": "AgentLock",
+                  "url": "https://github.com/webpro255/agentlock"
+                }
+              ],
+              "metrics": {
+                "stars": 343,
+                "updated": "2026-06-11",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "SlowMist Agent Security",
+              "repo": "slowmist/slowmist-agent-security",
+              "org": "SlowMist",
+              "desc": "Security-review skill and workflow for auditing agent skills, MCP servers, repositories, URLs, and documents before installation or use.",
+              "license": "MIT",
+              "status": [
+                "open_source"
+              ],
+              "note": "— **note:** Markdown-based workflow skill executed by a compatible host agent, not a deterministic standalone scanner; findings depend on the selected model and its available tools.",
+              "related": [
+                {
+                  "label": "MCP-Security-Checklist",
+                  "url": "https://github.com/slowmist/MCP-Security-Checklist"
+                },
+                {
+                  "label": "sast-skills",
+                  "url": "https://github.com/utkusen/sast-skills"
+                }
+              ],
+              "metrics": {
+                "stars": 502,
+                "updated": "2026-04-17",
+                "snapshot": "2026-08-24"
+              }
             }
           ]
         },
@@ -1751,6 +1836,152 @@
               "metrics": {
                 "stars": 11,
                 "updated": "2026-08-23",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "HOL Guard",
+              "repo": "hashgraph-online/hol-guard",
+              "org": "Hashgraph Online",
+              "desc": "Local-first runtime security layer for coding agents that evaluates commands, package installs, skills, MCP configuration, and sensitive actions through policy, approval, evidence, and audit workflows.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source",
+                "commercial_open"
+              ],
+              "flags": [
+                "early_stage",
+                "commercial_features"
+              ],
+              "note": "— **note:** integrations are cooperative hooks rather than a hard isolation boundary, and documented hook failures can fail open; synchronized evidence, team policy, and fleet workflows use the optional hosted service.",
+              "related": [
+                {
+                  "label": "emisar",
+                  "url": "https://github.com/MatteoColelli/emisar"
+                },
+                {
+                  "label": "Prismor",
+                  "url": "https://github.com/PrismorSec/prismor"
+                }
+              ],
+              "metrics": {
+                "stars": 466,
+                "updated": "2026-08-24",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "StackOne Defender",
+              "repo": "StackOneHQ/defender",
+              "org": "StackOne",
+              "desc": "Offline TypeScript runtime guard for indirect prompt injection in tool results, using bundled ONNX classifiers, deterministic checks, sanitization, and allow/block verdicts.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** blocking high-risk results is opt-in by default; missing Tier-2 dependencies can fall back to simpler Tier-1 detection unless strict mode is enabled, so configure fail behavior explicitly for enforcement use.",
+              "related": [
+                {
+                  "label": "LLM Guard",
+                  "url": "https://github.com/protectai/llm-guard"
+                },
+                {
+                  "label": "little-canary",
+                  "url": "https://github.com/hermes-labs-ai/little-canary"
+                }
+              ],
+              "metrics": {
+                "stars": 117,
+                "updated": "2026-08-19",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "Earl",
+              "repo": "mathematic-inc/earl",
+              "org": "Mathematic",
+              "desc": "Capability proxy for AI agents that exposes approved operation names while keeping request templates and credentials outside the model, with HCL policy, audit, and egress controls.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** operation templates and policy configuration form part of the trusted boundary and require review; the proxy reduces credential and request-construction exposure but is not a sandbox for the agent process.",
+              "related": [
+                {
+                  "label": "onecli",
+                  "url": "https://github.com/onecli/onecli"
+                },
+                {
+                  "label": "agentgateway",
+                  "url": "https://github.com/agentgateway/agentgateway"
+                }
+              ],
+              "metrics": {
+                "stars": 113,
+                "updated": "2026-08-23",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "Portkey AI Gateway",
+              "repo": "Portkey-AI/gateway",
+              "org": "Portkey",
+              "desc": "Open AI gateway with provider routing, fallback and retry controls, guardrail integrations, observability, and MCP traffic support for model and agent applications.",
+              "license": "MIT",
+              "status": [
+                "open_source",
+                "commercial_open"
+              ],
+              "flags": [
+                "commercial_features",
+                "requires_api_key"
+              ],
+              "note": "— **note:** the gateway is general infrastructure rather than a standalone security scanner; model-provider credentials are required, and some RBAC, analytics, and managed control-plane capabilities belong to Portkey's hosted or enterprise products.",
+              "related": [
+                {
+                  "label": "agentgateway",
+                  "url": "https://github.com/agentgateway/agentgateway"
+                },
+                {
+                  "label": "Pipelock",
+                  "url": "https://github.com/luckyPipewrench/pipelock"
+                }
+              ],
+              "metrics": {
+                "stars": 12815,
+                "updated": "2026-05-25",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "Casbin AI Gateway",
+              "repo": "apache/casbin-gateway",
+              "org": "Apache Casbin",
+              "desc": "Local gateway and policy layer for model-provider and MCP traffic, combining provider-key mediation, access control, prompt records, and configurable request handling.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "note": "— **note:** binds to localhost by default because its local UI can exercise administrative operations and the relay can access stored provider keys; do not expose it beyond a trusted host without adding authentication and reviewing prompt-recording settings.",
+              "related": [
+                {
+                  "label": "agentgateway",
+                  "url": "https://github.com/agentgateway/agentgateway"
+                },
+                {
+                  "label": "Portkey AI Gateway",
+                  "url": "https://github.com/Portkey-AI/gateway"
+                }
+              ],
+              "metrics": {
+                "stars": 570,
+                "updated": "2026-08-24",
                 "snapshot": "2026-08-24"
               }
             }
@@ -5311,6 +5542,130 @@
                 "updated": "2026-05-18",
                 "snapshot": "2026-08-17"
               }
+            },
+            {
+              "name": "Argus",
+              "repo": "gy15901580825/Argus",
+              "desc": "Black-box red-team framework for LLM applications and agents with target adapters, attack probes, deterministic and model-assisted judging, and SARIF, JUnit, HTML, and JSON reporting.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source",
+                "research"
+              ],
+              "flags": [
+                "early_stage",
+                "heavy_runtime",
+                "requires_api_key",
+                "authorized_testing_only"
+              ],
+              "note": "— **note:** pre-1.0 project; full deployments use an orchestrator and PostgreSQL, while model-assisted judges require provider credentials. Attack-success and guardrail-improvement figures are project-reported; probe only authorized targets.",
+              "related": [
+                {
+                  "label": "PyRIT",
+                  "url": "https://github.com/microsoft/PyRIT"
+                },
+                {
+                  "label": "promptfoo",
+                  "url": "https://github.com/promptfoo/promptfoo"
+                }
+              ],
+              "metrics": {
+                "stars": 204,
+                "updated": "2026-08-14",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "Cryptex OSS",
+              "repo": "m4xx101/cryptex-oss",
+              "desc": "Browser-based and self-hostable adversarial prompt workbench with transformation pipelines, campaign workflows, TAP/PAIR/Crescendo methods, and HarmBench/JailbreakBench-style corpora.",
+              "license": "MIT",
+              "status": [
+                "open_source",
+                "commercial_open"
+              ],
+              "flags": [
+                "authorized_testing_only",
+                "commercial_features"
+              ],
+              "note": "— **note:** authorized-testing toolkit; provider keys are supplied by the operator and retained in browser storage. Included benchmark scoring is explicitly heuristic rather than paper-accurate, and the separate production product is closed-source.",
+              "related": [
+                {
+                  "label": "wallbreaker",
+                  "url": "https://github.com/JailbrokenAI/wallbreaker"
+                },
+                {
+                  "label": "HarmBench",
+                  "url": "https://github.com/centerforaisafety/HarmBench"
+                }
+              ],
+              "metrics": {
+                "stars": 339,
+                "updated": "2026-06-09",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "API Relay Audit",
+              "repo": "toby-bridges/api-relay-audit",
+              "desc": "Local audit CLI for third-party LLM relays and proxies, testing prompt injection, model substitution, tool-call rewriting, streaming behavior, and relay-specific trust assumptions.",
+              "license": "AGPL-3.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "copyleft",
+                "requires_api_key",
+                "authorized_testing_only"
+              ],
+              "note": "— **note:** sends the supplied API credential to the relay being tested, so use a scoped disposable key and only assess services you are authorized to probe. Results identify suspicious behavior but do not certify a relay as safe.",
+              "related": [
+                {
+                  "label": "garak",
+                  "url": "https://github.com/NVIDIA/garak"
+                },
+                {
+                  "label": "LLMmap",
+                  "url": "https://github.com/pasquini-dario/LLMmap"
+                }
+              ],
+              "metrics": {
+                "stars": 803,
+                "updated": "2026-08-15",
+                "snapshot": "2026-08-24"
+              }
+            },
+            {
+              "name": "AIDR Bastion",
+              "repo": "socprime/AIDR-Bastion",
+              "org": "SOC Prime",
+              "desc": "Runtime input-protection service combining detection rules, similarity search, classifiers, optional LLM analysis, and code-oriented checks to allow, block, or notify on suspicious GenAI traffic.",
+              "license": "LGPL-3.0",
+              "status": [
+                "open_source",
+                "commercial_open"
+              ],
+              "flags": [
+                "copyleft",
+                "heavy_runtime",
+                "commercial_features"
+              ],
+              "note": "— **note:** multi-service deployment can require OpenSearch/Elasticsearch, Qdrant, Kafka, and an optional local or hosted model; some rule and integration workflows connect to SOC Prime services. Treat it as a layered signal source, not a complete isolation boundary.",
+              "related": [
+                {
+                  "label": "LLM Guard",
+                  "url": "https://github.com/protectai/llm-guard"
+                },
+                {
+                  "label": "NeMo Guardrails",
+                  "url": "https://github.com/NVIDIA-NeMo/Guardrails"
+                }
+              ],
+              "metrics": {
+                "stars": 107,
+                "updated": "2026-08-20",
+                "snapshot": "2026-08-24"
+              }
             }
           ]
         },
@@ -5956,6 +6311,100 @@
             "stars": 271,
             "updated": "2026-01-14",
             "snapshot": "2026-08-17"
+          }
+        },
+        {
+          "name": "SCAM",
+          "repo": "1Password/SCAM",
+          "org": "1Password",
+          "desc": "Benchmark for measuring whether tool-using agents recognize and resist realistic scams, social engineering, credential requests, impersonation, and unsafe multi-turn instructions across 30 scenarios and nine threat categories.",
+          "license": "MIT",
+          "status": [
+            "open_source",
+            "research"
+          ],
+          "flags": [
+            "requires_api_key"
+          ],
+          "note": "— **note:** evaluation requires at least one configured model provider; leaderboard results and reported safety improvements from the optional skill are project-reported, with raw result artifacts published for inspection.",
+          "related": [
+            {
+              "label": "AgentDojo",
+              "url": "https://github.com/ethz-spylab/agentdojo"
+            },
+            {
+              "label": "Agent Security Bench",
+              "url": "https://github.com/agiresearch/ASB"
+            }
+          ],
+          "metrics": {
+            "stars": 136,
+            "updated": "2026-02-12",
+            "snapshot": "2026-08-24"
+          }
+        },
+        {
+          "name": "AIRTBench-Code",
+          "repo": "dreadnode/AIRTBench-Code",
+          "org": "Dreadnode",
+          "desc": "Research harness and dataset for evaluating autonomous AI red-team agents on AI/ML security CTF challenges, with published task definitions and result artifacts.",
+          "license": "Apache-2.0",
+          "status": [
+            "open_source",
+            "research"
+          ],
+          "flags": [
+            "heavy_runtime",
+            "requires_api_key",
+            "authorized_testing_only",
+            "commercial_features"
+          ],
+          "note": "— **note:** the public code and dataset accompany arXiv 2506.14682, but reproducing the full evaluation depends on Dreadnode's hosted Strikes environment, platform access, model credentials, and containerized challenge infrastructure.",
+          "related": [
+            {
+              "label": "Cybench",
+              "url": "https://github.com/andyzorigin/cybench"
+            },
+            {
+              "label": "CyberGym",
+              "url": "https://github.com/sunblaze-ucb/cybergym"
+            }
+          ],
+          "metrics": {
+            "stars": 107,
+            "updated": "2026-04-26",
+            "snapshot": "2026-08-24"
+          }
+        },
+        {
+          "name": "AI-Goat (Orca Security)",
+          "repo": "orcasecurity-research/AIGoat",
+          "org": "Orca Security Research",
+          "desc": "Deliberately vulnerable AWS and Terraform lab for learning AI/ML infrastructure risks such as model supply-chain compromise, data poisoning, insecure output handling, and integrity failures.",
+          "license": "Apache-2.0",
+          "status": [
+            "open_source",
+            "research"
+          ],
+          "flags": [
+            "heavy_runtime",
+            "authorized_testing_only"
+          ],
+          "note": "— **note:** distinct from the local LLM playgrounds with similar names; deploys intentionally vulnerable cloud resources and can incur AWS costs, so use only in an isolated authorized account and remove resources after each lab.",
+          "related": [
+            {
+              "label": "AIGoat",
+              "url": "https://github.com/AISecurityConsortium/AIGoat"
+            },
+            {
+              "label": "AI Goat",
+              "url": "https://github.com/dhammon/ai-goat"
+            }
+          ],
+          "metrics": {
+            "stars": 284,
+            "updated": "2025-09-16",
+            "snapshot": "2026-08-24"
           }
         }
       ]
