@@ -1929,6 +1929,31 @@
               }
             },
             {
+              "name": "Bifrost",
+              "repo": "maximhq/bifrost",
+              "org": "Maxim",
+              "desc": "Open-source AI gateway with an OpenAI-compatible API, multi-provider routing, automatic fallbacks, load balancing, governance controls, guardrails, and MCP support.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "related": [
+                {
+                  "label": "Portkey AI Gateway",
+                  "url": "https://github.com/Portkey-AI/gateway"
+                },
+                {
+                  "label": "Agentgateway",
+                  "url": "https://github.com/agentgateway/agentgateway"
+                }
+              ],
+              "metrics": {
+                "stars": 7548,
+                "updated": "2026-08-25",
+                "snapshot": "2026-08-25"
+              }
+            },
+            {
               "name": "Portkey AI Gateway",
               "repo": "Portkey-AI/gateway",
               "org": "Portkey",
