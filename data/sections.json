@@ -1557,6 +1557,25 @@
               }
             },
             {
+              "name": "Verb Authority",
+              "repo": "yairsabag/verb-authority",
+              "desc": "Python gate and schema scanner that infers per-argument authority from tool schemas, tracks limited value provenance, and blocks untrusted agent data from authoring protected tool-call arguments before execution.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** research-grade project with limited independent adoption signal; its guarantee is scoped to per-argument authority under the documented provenance model.",
+              "related": [
+                {
+                  "label": "AgentLock",
+                  "url": "https://github.com/webpro255/agentlock"
+                }
+              ]
+            },
+            {
               "name": "h5i",
               "repo": "h5i-dev/h5i",
               "desc": "Local Rust CLI for auditable coding-agent workspaces: per-agent worktrees with sandbox policies, provenance capture, peer review, neutral verification, secret/prompt-injection audit signals, and refs/h5i/* run metadata.",
