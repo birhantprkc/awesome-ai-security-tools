@@ -7,7 +7,7 @@
 
 **Type legend:** 🟢 public source / open-source · 🔬 research (paper / benchmark / dataset / framework) · 🟠 commercial with open components · ⚠️ restrictive, non-commercial, or unclear/no license — check before use.
 
-GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-25. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
+GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-30. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
 
 ---
 
@@ -118,6 +118,8 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [agent-scan](https://github.com/snyk/agent-scan) · [AgentLock](https://github.com/webpro255/agentlock)
 - **[SlowMist Agent Security](https://github.com/slowmist/slowmist-agent-security)** 🟢 — Security-review skill and workflow for auditing agent skills, MCP servers, repositories, URLs, and documents before installation or use. *(SlowMist)* — **note:** Markdown-based workflow skill executed by a compatible host agent, not a deterministic standalone scanner; findings depend on the selected model and its available tools. *(★ 502 · updated 2026-04-17)*
   - **Related:** [MCP-Security-Checklist](https://github.com/slowmist/MCP-Security-Checklist) · [sast-skills](https://github.com/utkusen/sast-skills)
+- **[Sandbox Probe](https://github.com/controlplaneio/sandbox-probe)** 🟢 — Static Go probe that measures the effective filesystem, network, process, credential, and runtime capabilities exposed inside an AI-agent sandbox, then compares sandbox and host baselines. *(ControlPlane)* — **note:** boundary-measurement auditor, not an enforcement layer; some integration scripts can ask real agents to execute the probe, while deterministic model-free stubs are available for CI. *(★ 25 · updated 2026-08-25)*
+  - **Related:** [Sandlock](https://github.com/multikernel/sandlock) · [AIO Sandbox](https://github.com/agent-infra/sandbox)
 
 ### Frameworks, Rule Standards & Benchmarks
 
@@ -144,6 +146,8 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [SkillSpector](https://github.com/NVIDIA/SkillSpector) · [AgentDojo](https://github.com/ethz-spylab/agentdojo)
 - **[AI Security Verification Standard (AISVS)](https://github.com/OWASP/AISVS)** 🔬⚠️ — Stable verification standard defining testable security requirements for AI applications across model lifecycle, supply chain, data handling, agentic systems, and MCP integrations. *(OWASP)* — **note:** security standard and checklist, not an executable scanner; share-alike terms apply to adapted material. *(★ 429 · updated 2026-07-30)*
   - **Related:** [asamm](https://github.com/scadastrangelove/asamm) · [Agent Threat Rules](https://github.com/Agent-Threat-Rule/agent-threat-rules)
+- **[OWASP Agent Security Regression Harness](https://github.com/OWASP/Agent-Security-Regression-Harness)** 🟢 — Vendor-neutral harness for running repeatable agent and MCP abuse scenarios, evaluating policy assertions over execution traces, and emitting machine-readable regression results for local development and CI. *(OWASP)* — **note:** early OWASP Incubator project; it is a regression harness for known abuse cases, not a scanner, leaderboard, general benchmark, or guarantee of agent security. *(★ 49 · updated 2026-07-27)*
+  - **Related:** [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) · [AgentDojo](https://github.com/ethz-spylab/agentdojo)
 
 ### Runtime Protection & Enforcement
 
@@ -216,6 +220,12 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [agentgateway](https://github.com/agentgateway/agentgateway) · [Pipelock](https://github.com/luckyPipewrench/pipelock)
 - **[Casbin AI Gateway](https://github.com/apache/casbin-gateway)** 🟢 — Local gateway and policy layer for model-provider and MCP traffic, combining provider-key mediation, access control, prompt records, and configurable request handling. *(Apache Casbin)* — **note:** binds to localhost by default because its local UI can exercise administrative operations and the relay can access stored provider keys; do not expose it beyond a trusted host without adding authentication and reviewing prompt-recording settings. *(★ 570 · updated 2026-08-24)*
   - **Related:** [agentgateway](https://github.com/agentgateway/agentgateway) · [Portkey AI Gateway](https://github.com/Portkey-AI/gateway)
+- **[Adrian](https://github.com/secureagentics/Adrian)** 🟢🟠 — Runtime monitoring and intervention layer that correlates agent actions with available reasoning traces through Python and TypeScript SDKs, a Claude Code integration, and managed or self-hosted deployments. *(Secure Agentics)* — **note:** the bundled self-hosted stack requires Docker, substantial disk space, and an NVIDIA GPU for the recommended local classifier; the README's `+35%` and `4x` headline extrapolates cited third-party research rather than an Adrian benchmark. *(★ 552 · updated 2026-08-20)*
+  - **Related:** [Agentic Radar](https://github.com/splx-ai/agentic-radar) · [Armorer Guard](https://github.com/ArmorerLabs/Armorer-Guard)
+- **[Sandlock](https://github.com/multikernel/sandlock)** 🟢 — Unprivileged Linux process sandbox using Landlock, seccomp-BPF, and seccomp user notification to apply per-process filesystem, network, syscall, and execution policies without a container or VM. *(Multikernel)* — **note:** Linux-kernel process isolation rather than prompt-injection detection; protection depends on available Landlock and seccomp features and is not a multi-tenant VM boundary. *(★ 381 · updated 2026-08-23)*
+  - **Related:** [Sandbox Probe](https://github.com/controlplaneio/sandbox-probe) · [AIO Sandbox](https://github.com/agent-infra/sandbox)
+- **[Lunar](https://github.com/TheLunarCompany/lunar)** 🟢🟠 — API and MCP gateway combining outbound-traffic visibility, policy enforcement, rate limits, retries, circuit breakers, and centralized MCP server aggregation for agent workloads. *(Lunar.dev)* — **note:** the repository is active but its latest formal GitHub release is from 2024; the README positions the open core for non-production or personal use and directs production deployments to commercial platform tiers. *(★ 485 · updated 2026-08-28)*
+  - **Related:** [agentgateway](https://github.com/agentgateway/agentgateway) · [Bifrost](https://github.com/maximhq/bifrost)
 
 ---
 
@@ -259,6 +269,8 @@ Tools for securing model artifacts, serialized ML files, AI/ML supply-chain surf
   - **Related:** [open-malicious-code-benchmark](https://github.com/False-Positive-Community/open-malicious-code-benchmark)
 - **[pypi_malregistry](https://github.com/lxyeternal/pypi_malregistry)** 🔬⚠️ — ASE'23 / USENIX Security'26 malicious-PyPI dataset with more than 10k malicious package versions. — **note:** no LICENSE file found and the repository contains malware samples; handle in an isolated environment. *(★ 129 · updated 2026-07-21)*
   - **Related:** [malicious-software-packages-dataset](https://github.com/DataDog/malicious-software-packages-dataset)
+- **[Activation-based Model Scanner (AMS)](https://github.com/GoogleCloudPlatform/activation-model-scanner)** 🟢🔬 — PyPI scanner that uses safety-related activation fingerprints to detect degraded or removed safety training and compare an open-weight model with a known baseline. *(Google Cloud Platform)* — **note:** unofficial and unsupported Google research-derived project; GPU execution is recommended, calibration covers a limited set of model families, and the documented method can miss modifications that preserve measured safety directions. *(★ 32 · updated 2026-08-27)*
+  - **Related:** [AASE research](https://research.google/pubs/aase-activation-based-ai-safety-enforcement-via-lightweight-probes/) · [model-provenance-kit](https://github.com/cisco-ai-defense/model-provenance-kit)
 
 ---
 
@@ -583,6 +595,10 @@ Tools for attacking and defending LLM applications themselves.
   - **Related:** [garak](https://github.com/NVIDIA/garak) · [LLMmap](https://github.com/pasquini-dario/LLMmap)
 - **[AIDR Bastion](https://github.com/socprime/AIDR-Bastion)** 🟢🟠⚠️ — Runtime input-protection service combining detection rules, similarity search, classifiers, optional LLM analysis, and code-oriented checks to allow, block, or notify on suspicious GenAI traffic. *(SOC Prime)* — **note:** multi-service deployment can require OpenSearch/Elasticsearch, Qdrant, Kafka, and an optional local or hosted model; some rule and integration workflows connect to SOC Prime services. Treat it as a layered signal source, not a complete isolation boundary. *(★ 107 · updated 2026-08-20)*
   - **Related:** [LLM Guard](https://github.com/protectai/llm-guard) · [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails)
+- **[CaMeL](https://github.com/google-research/camel-prompt-injection)** 🟢🔬 — Research implementation of the capability-based CaMeL interpreter architecture for separating trusted control flow from untrusted data while evaluating prompt-injection defenses on AgentDojo. *(Google Research / Google DeepMind / ETH Zurich)* — **note:** unsupported paper-reproduction artifact whose maintainers explicitly warn that the interpreter may contain bugs and may not be fully secure; do not treat it as a production guardrail. *(★ 379 · updated 2025-06-20)*
+  - **Related:** [Defeating Prompt Injections by Design](https://arxiv.org/abs/2503.18813) · [AgentDojo](https://github.com/ethz-spylab/agentdojo)
+- **[Meta SecAlign](https://github.com/facebookresearch/Meta_SecAlign)** 🔬⚠️ — Research code, training recipe, and evaluation harness for prompt-injection-resistant Meta SecAlign models across six security and eight utility benchmarks. *(Meta / UC Berkeley)* — **note:** most repository code is non-commercial while published model weights use separate Llama community terms; reproducing training or the full evaluation requires substantial GPU capacity and optional provider credentials. *(★ 70 · updated 2026-06-11)*
+  - **Related:** [AgentDojo](https://github.com/ethz-spylab/agentdojo) · [Meta SecAlign models](https://huggingface.co/meta-llama)
 
 ### Prompt-Injection Classifier Models
 
@@ -654,6 +670,8 @@ Offensive agents and the benchmarks used to evaluate them.
   - **Related:** [Cybench](https://github.com/andyzorigin/cybench) · [CyberGym](https://github.com/sunblaze-ucb/cybergym)
 - **[AI-Goat (Orca Security)](https://github.com/orcasecurity-research/AIGoat)** 🟢🔬 — Deliberately vulnerable AWS and Terraform lab for learning AI/ML infrastructure risks such as model supply-chain compromise, data poisoning, insecure output handling, and integrity failures. *(Orca Security Research)* — **note:** distinct from the local LLM playgrounds with similar names; deploys intentionally vulnerable cloud resources and can incur AWS costs, so use only in an isolated authorized account and remove resources after each lab. *(★ 284 · updated 2025-09-16)*
   - **Related:** [AIGoat](https://github.com/AISecurityConsortium/AIGoat) · [AI Goat](https://github.com/dhammon/ai-goat)
+- **[LivePI](https://github.com/leizhao7/livepi)** 🔬⚠️ — Reproducibility artifact for a production-like indirect prompt-injection benchmark spanning live but test-controlled email, chat, web, local-file, repository, and wallet surfaces. — **note:** benchmark setup interacts with live test accounts and services and includes attack scenarios capable of exfiltration, unsafe execution, security-control changes, and value transfer; reproduce only in isolated infrastructure with synthetic credentials and explicit authorization. *(★ 9 · updated 2026-06-08)*
+  - **Related:** [LivePI paper](https://arxiv.org/abs/2605.17986) · [AgentDojo](https://github.com/ethz-spylab/agentdojo)
 
 ---
 
