@@ -1567,7 +1567,7 @@
               "flags": [
                 "early_stage"
               ],
-              "note": "— **note:** research-grade project with limited independent adoption signal; its guarantee is scoped to per-argument authority under the documented provenance model.",
+              "note": "— **note:** its guarantee is scoped to per-argument authority under the documented provenance model.",
               "related": [
                 {
                   "label": "AgentLock",
