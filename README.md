@@ -7,7 +7,7 @@
 
 **Type legend:** 🟢 public source / open-source · 🔬 research (paper / benchmark / dataset / framework) · 🟠 commercial with open components · ⚠️ restrictive, non-commercial, or unclear/no license — check before use.
 
-GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-24. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
+GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-25. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
 
 ---
 
@@ -210,6 +210,8 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [LLM Guard](https://github.com/protectai/llm-guard) · [little-canary](https://github.com/hermes-labs-ai/little-canary)
 - **[Earl](https://github.com/mathematic-inc/earl)** 🟢 — Capability proxy for AI agents that exposes approved operation names while keeping request templates and credentials outside the model, with HCL policy, audit, and egress controls. *(Mathematic)* — **note:** operation templates and policy configuration form part of the trusted boundary and require review; the proxy reduces credential and request-construction exposure but is not a sandbox for the agent process. *(★ 113 · updated 2026-08-23)*
   - **Related:** [onecli](https://github.com/onecli/onecli) · [agentgateway](https://github.com/agentgateway/agentgateway)
+- **[Bifrost](https://github.com/maximhq/bifrost)** 🟢 — Open-source AI gateway with an OpenAI-compatible API, multi-provider routing, automatic fallbacks, load balancing, governance controls, guardrails, and MCP support. *(Maxim)* *(★ 7,548 · updated 2026-08-25)*
+  - **Related:** [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) · [Agentgateway](https://github.com/agentgateway/agentgateway)
 - **[Portkey AI Gateway](https://github.com/Portkey-AI/gateway)** 🟢🟠 — Open AI gateway with provider routing, fallback and retry controls, guardrail integrations, observability, and MCP traffic support for model and agent applications. *(Portkey)* — **note:** the gateway is general infrastructure rather than a standalone security scanner; model-provider credentials are required, and some RBAC, analytics, and managed control-plane capabilities belong to Portkey's hosted or enterprise products. *(★ 12,815 · updated 2026-05-25)*
   - **Related:** [agentgateway](https://github.com/agentgateway/agentgateway) · [Pipelock](https://github.com/luckyPipewrench/pipelock)
 - **[Casbin AI Gateway](https://github.com/apache/casbin-gateway)** 🟢 — Local gateway and policy layer for model-provider and MCP traffic, combining provider-key mediation, access control, prompt records, and configurable request handling. *(Apache Casbin)* — **note:** binds to localhost by default because its local UI can exercise administrative operations and the relay can access stored provider keys; do not expose it beyond a trusted host without adding authentication and reviewing prompt-recording settings. *(★ 570 · updated 2026-08-24)*
