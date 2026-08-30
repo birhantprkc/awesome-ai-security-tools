@@ -1932,11 +1932,17 @@
               "name": "Bifrost",
               "repo": "maximhq/bifrost",
               "org": "Maxim",
-              "desc": "Open-source AI gateway with an OpenAI-compatible API, multi-provider routing, automatic fallbacks, load balancing, governance controls, guardrails, and MCP support.",
+              "desc": "Apache-licensed AI and MCP gateway with multi-provider routing, virtual-key access controls, budgets, rate limits, MCP aggregation, OAuth, automatic fallbacks, and load balancing.",
               "license": "Apache-2.0",
               "status": [
-                "open_source"
+                "open_source",
+                "commercial_open"
               ],
+              "flags": [
+                "commercial_features",
+                "requires_api_key"
+              ],
+              "note": "— **note:** model-provider credentials and proxied request/response data are sensitive; restrict and authenticate the gateway and admin interface, use TLS, and load only trusted plugins. Content guardrails, RBAC/SSO, clustering, and other advanced governance controls require Bifrost Enterprise.",
               "related": [
                 {
                   "label": "Portkey AI Gateway",
