@@ -7,7 +7,7 @@
 
 **Type legend:** 🟢 public source / open-source · 🔬 research (paper / benchmark / dataset / framework) · 🟠 commercial with open components · ⚠️ restrictive, non-commercial, or unclear/no license — check before use.
 
-GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-30. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
+GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-31. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
 
 ---
 
@@ -311,7 +311,7 @@ Autonomous and semi-autonomous AI agents for penetration testing, exploitation, 
 - **[HunterX](https://github.com/nullc0d30/HunterX)** 🟢 — AI-assisted offensive security engine that orchestrates reconnaissance, security-tool coordination, vulnerability detection and validation, evidence collection, and report-ready findings in one workflow. *(NullC0d3)* — **note:** early-stage and tool-orchestration-heavy; run only in an isolated, authorized assessment environment. *(★ 12 · updated 2026-08-16)*
 - **[MCP Security Hub](https://github.com/FuzzingLabs/mcp-security-hub)** 🟢 — Collection of Dockerized MCP servers that expose offensive-security tools such as Nmap, Nuclei, SQLMap, Ghidra, Hashcat, and related assessment utilities to MCP-capable assistants. *(FuzzingLabs)* — **note:** orchestration and wrapper collection rather than a security boundary; its containers invoke offensive tools and must be used only in isolated, explicitly authorized environments. *(★ 761 · updated 2026-04-08)*
   - **Related:** [pentest-ai](https://github.com/0xSteph/pentest-ai) · [Burp Suite MCP Server](https://github.com/PortSwigger/mcp-server)
-- **[forefy/.context — AI Security Registry](https://forefy.com/asr)** 🟢 — Commit-pinned AI agent Skills, Goals, and Dynamic Workflows for security auditing, pentesting, and research, installable into Claude Code and other agents; indexed, scanned, and reviewed at the AI Security Registry (forefy.com/asr). *(Forefy)* — **note:** this repo is Forefy's own skill set; forefy.com/asr additionally aggregates commit-pinned skills from other public repos, each retaining its upstream license, with per-item supply-chain scans and a documented review methodology. *(★ 133 · updated 2026-08-27)*
+- **[Forefy .context](https://github.com/forefy/.context)** 🟢 — MIT-licensed collection of AI-agent Skills, Goals, and Dynamic Workflows for security auditing, authorized penetration testing, and research across web, cloud, blockchain, and defensive workflows. *(Forefy)* — **note:** agent-interpreted skill and workflow bundle rather than a deterministic scanner; includes active offensive procedures, so review and pin content before use and run it only in isolated, authorized assessments. The hosted AI Security Registry is a separate SaaS-backed catalog that publishes commit provenance and project-generated scan/audit metadata. *(★ 133 · updated 2026-08-31)*
   - **Related:** [AI Security Registry](https://forefy.com/asr) · [Review methodology](https://forefy.com/asr/docs/supply-chain-defense) · [OpenAPI schema](https://forefy.com/docs/openapi.json)
 
 ---
