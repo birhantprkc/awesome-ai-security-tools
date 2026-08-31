@@ -2156,6 +2156,26 @@
                 "updated": "2026-08-28",
                 "snapshot": "2026-08-30"
               }
+            },
+            {
+              "name": "sofagent",
+              "repo": "KongFangXun/sofagent",
+              "desc": "Commit-time audit engine for AI coding agents that scans git diffs against 24 audit rules (secret leaks, out-of-scope edits, blind modifications without prior reads, commit-message prompt injection, unauthorized file changes) and writes an HMAC-signed, tamper-evident local audit history, with MCP tools for governance aggregation.",
+              "license": "MIT",
+              "status": [
+                "open_source"
+              ],
+              "related": [
+                {
+                  "label": "Pipelock",
+                  "url": "https://github.com/luckyPipewrench/pipelock"
+                }
+              ],
+              "metrics": {
+                "stars": 41,
+                "updated": "2026-08-28",
+                "snapshot": "2026-08-31"
+              }
             }
           ]
         }
