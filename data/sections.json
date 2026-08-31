@@ -3124,6 +3124,37 @@
             "updated": "2026-04-08",
             "snapshot": "2026-08-17"
           }
+        },
+        {
+          "name": "forefy/.context — AI Security Registry",
+          "repo": "forefy/.context",
+          "org": "Forefy",
+          "url": "https://forefy.com/asr",
+          "desc": "Commit-pinned AI agent Skills, Goals, and Dynamic Workflows for security auditing, pentesting, and research, installable into Claude Code and other agents; indexed, scanned, and reviewed at the AI Security Registry (forefy.com/asr).",
+          "license": "MIT",
+          "status": [
+            "open_source"
+          ],
+          "note": "— **note:** this repo is Forefy's own skill set; forefy.com/asr additionally aggregates commit-pinned skills from other public repos, each retaining its upstream license, with per-item supply-chain scans and a documented review methodology.",
+          "related": [
+            {
+              "label": "AI Security Registry",
+              "url": "https://forefy.com/asr"
+            },
+            {
+              "label": "Review methodology",
+              "url": "https://forefy.com/asr/docs/supply-chain-defense"
+            },
+            {
+              "label": "OpenAPI schema",
+              "url": "https://forefy.com/docs/openapi.json"
+            }
+          ],
+          "metrics": {
+            "stars": 133,
+            "updated": "2026-08-27",
+            "snapshot": "2026-08-30"
+          }
         }
       ]
     },
