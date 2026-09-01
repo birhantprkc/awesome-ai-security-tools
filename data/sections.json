@@ -2156,6 +2156,34 @@
                 "updated": "2026-08-28",
                 "snapshot": "2026-08-30"
               }
+            },
+            {
+              "name": "Norviq",
+              "repo": "norviq-dev/norviq",
+              "desc": "Kubernetes policy enforcement point for LLM agent tool calls that content-hash pins each tool definition at discovery and evaluates every tools/call against OPA/Rego policy before the upstream MCP server receives it.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** ships in audit mode — the installed baseline records what it would have refused and lets the call proceed, and all shipped policy presets default to allow, so enforcement starts with the first rule an operator writes. The discovery-time description scanner is a documented heuristic and the project publishes the payloads that defeat it. Young project with limited independent adoption signal.",
+              "related": [
+                {
+                  "label": "Prismor",
+                  "url": "https://github.com/PrismorSec/prismor"
+                },
+                {
+                  "label": "mcp-context-protector",
+                  "url": "https://github.com/trailofbits/mcp-context-protector"
+                }
+              ],
+              "metrics": {
+                "stars": 18,
+                "updated": "2026-08-24",
+                "snapshot": "2026-09-01"
+              }
             }
           ]
         }
