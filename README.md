@@ -226,6 +226,8 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [Sandbox Probe](https://github.com/controlplaneio/sandbox-probe) · [AIO Sandbox](https://github.com/agent-infra/sandbox)
 - **[Lunar](https://github.com/TheLunarCompany/lunar)** 🟢🟠 — API and MCP gateway combining outbound-traffic visibility, policy enforcement, rate limits, retries, circuit breakers, and centralized MCP server aggregation for agent workloads. *(Lunar.dev)* — **note:** the repository is active but its latest formal GitHub release is from 2024; the README positions the open core for non-production or personal use and directs production deployments to commercial platform tiers. *(★ 485 · updated 2026-08-28)*
   - **Related:** [agentgateway](https://github.com/agentgateway/agentgateway) · [Bifrost](https://github.com/maximhq/bifrost)
+- **[sofagent](https://github.com/KongFangXun/sofagent)** 🟢 — Commit-time audit engine for AI coding agents that scans git diffs against 24 audit rules (secret leaks, out-of-scope edits, blind modifications without prior reads, commit-message prompt injection, unauthorized file changes) and writes an HMAC-signed, tamper-evident local audit history, with MCP tools for governance aggregation. *(★ 41 · updated 2026-08-28)*
+  - **Related:** [Pipelock](https://github.com/luckyPipewrench/pipelock)
 
 ---
 

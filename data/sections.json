@@ -2180,9 +2180,33 @@
                 }
               ],
               "metrics": {
-                "stars": 18,
-                "updated": "2026-08-24",
-                "snapshot": "2026-09-01"
+                "stars": 24,
+                "updated": "2026-09-01",
+                "snapshot": "2026-09-04"
+              }
+            },
+            {
+              "name": "sofagent",
+              "repo": "KongFangXun/sofagent",
+              "desc": "Commit-time audit and governance suite for AI coding agents that scans git diffs against deterministic rules, records local audit history, and exposes MCP tools for governance aggregation.",
+              "license": "MIT",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** HMAC signing is optional, while local hooks, configuration, and key material remain accessible to same-user agents; the default setup is not fail-closed and Git hooks can be bypassed, so treat the history as local audit evidence rather than a hardened tamper-proof boundary.",
+              "related": [
+                {
+                  "label": "Pipelock",
+                  "url": "https://github.com/luckyPipewrench/pipelock"
+                }
+              ],
+              "metrics": {
+                "stars": 42,
+                "updated": "2026-09-03",
+                "snapshot": "2026-09-04"
               }
             }
           ]
