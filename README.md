@@ -7,7 +7,7 @@
 
 **Type legend:** 🟢 public source / open-source · 🔬 research (paper / benchmark / dataset / framework) · 🟠 commercial with open components · ⚠️ restrictive, non-commercial, or unclear/no license — check before use.
 
-GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-08-31. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
+GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Latest snapshot: 2026-09-04. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
 
 ---
 
@@ -128,7 +128,6 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [agent-audit](https://github.com/scadastrangelove/agent-audit)
 - **[agent-threat-rules (ATR)](https://github.com/Agent-Threat-Rule/agent-threat-rules)** 🟢 — Open, versioned, machine-readable detection rules for AI-agent threats (prompt injection, tool poisoning, MCP attacks, and skill compromise) — "Sigma for agents"; 768 rules across 10 categories with integrations for Microsoft AGT, Cisco AI Defense, MISP, OWASP, FINOS, and SigmaHQ. *(★ 371 · updated 2026-08-17)*
   - **Related:** [agent-audit](https://github.com/scadastrangelove/agent-audit) · [aguara](https://github.com/garagon/aguara)
-- **[mcpbait](https://github.com/jankesec/mcpbait)** 🟢 — Red teaming framework that proves whether an MCP-speaking agent can be hijacked by a rogue server; features 13 local attack modules (tool poisoning, memory persistence, markdown beacons) with in-process canary exfiltration detection and resilience scoring.
 - **[Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit)** 🟢 — Multi-language toolkit for policy-enforced agent tool calls and audit records, with optional identity, MCP-gateway, sandboxing, reliability, and compliance components. *(Microsoft)* — **note:** official public preview; APIs and deployment patterns may change before general availability. *(★ 5,962 · updated 2026-08-12)*
   - **Related:** [ATR – Agent Threat Rules](https://github.com/Agent-Threat-Rule/agent-threat-rules) · [ToolHive](https://github.com/stacklok/toolhive)
 - **[MCP-Security-Checklist](https://github.com/slowmist/MCP-Security-Checklist)** 🟢 — Security checklist for MCP clients, servers, multi-MCP deployments, lifecycle controls, authz/authn, isolation, and crypto-specific MCP integrations. *(SlowMist)* *(★ 835 · updated 2025-04-28)*
@@ -227,7 +226,9 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [Sandbox Probe](https://github.com/controlplaneio/sandbox-probe) · [AIO Sandbox](https://github.com/agent-infra/sandbox)
 - **[Lunar](https://github.com/TheLunarCompany/lunar)** 🟢🟠 — API and MCP gateway combining outbound-traffic visibility, policy enforcement, rate limits, retries, circuit breakers, and centralized MCP server aggregation for agent workloads. *(Lunar.dev)* — **note:** the repository is active but its latest formal GitHub release is from 2024; the README positions the open core for non-production or personal use and directs production deployments to commercial platform tiers. *(★ 485 · updated 2026-08-28)*
   - **Related:** [agentgateway](https://github.com/agentgateway/agentgateway) · [Bifrost](https://github.com/maximhq/bifrost)
-- **[sofagent](https://github.com/KongFangXun/sofagent)** 🟢 — Commit-time audit engine for AI coding agents that scans git diffs against 24 audit rules (secret leaks, out-of-scope edits, blind modifications without prior reads, commit-message prompt injection, unauthorized file changes) and writes an HMAC-signed, tamper-evident local audit history, with MCP tools for governance aggregation. *(★ 41 · updated 2026-08-28)*
+- **[Norviq](https://github.com/norviq-dev/norviq)** 🟢 — Kubernetes policy enforcement point for LLM agent tool calls that content-hash pins each tool definition at discovery and evaluates every tools/call against OPA/Rego policy before the upstream MCP server receives it. — **note:** ships in audit mode — the installed baseline records what it would have refused and lets the call proceed, and all shipped policy presets default to allow, so enforcement starts with the first rule an operator writes. The discovery-time description scanner is a documented heuristic and the project publishes the payloads that defeat it. Young project with limited independent adoption signal. *(★ 24 · updated 2026-09-01)*
+  - **Related:** [Prismor](https://github.com/PrismorSec/prismor) · [mcp-context-protector](https://github.com/trailofbits/mcp-context-protector)
+- **[sofagent](https://github.com/KongFangXun/sofagent)** 🟢 — Commit-time audit and governance suite for AI coding agents that scans git diffs against deterministic rules, records local audit history, and exposes MCP tools for governance aggregation. — **note:** HMAC signing is optional, while local hooks, configuration, and key material remain accessible to same-user agents; the default setup is not fail-closed and Git hooks can be bypassed, so treat the history as local audit evidence rather than a hardened tamper-proof boundary. *(★ 42 · updated 2026-09-03)*
   - **Related:** [Pipelock](https://github.com/luckyPipewrench/pipelock)
 
 ---

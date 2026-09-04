@@ -777,14 +777,8 @@
                 "updated": "2026-08-25",
                 "snapshot": "2026-08-30"
               }
-            },
-            {
-              "name": "whatileaked",
-              "repo": "selan-ai/whatileaked",
-              "org": "Selan",
-              "desc": "Scans local Claude Code, Codex and Cursor transcripts **and** instruction/memory files (CLAUDE.md, AGENTS.md) for credentials already sent to a model provider, using the gitleaks rule set unmodified; reports a rule name and one-way fingerprint instead of the secret, and `wipe` redacts findings in place. No network calls, no telemetry, zero dependencies; MIT."
             }
-]
+          ]
         },
         {
           "title": "Frameworks, Rule Standards & Benchmarks",
@@ -850,15 +844,6 @@
                 "updated": "2026-08-17",
                 "snapshot": "2026-08-17"
               }
-            },
-            {
-              "name": "mcpbait",
-              "repo": "jankesec/mcpbait",
-              "desc": "Red teaming framework that proves whether an MCP-speaking agent can be hijacked by a rogue server; features 13 local attack modules (tool poisoning, memory persistence, markdown beacons) with in-process canary exfiltration detection and resilience scoring.",
-              "license": "Apache-2.0",
-              "status": [
-                "open_source"
-              ]
             },
             {
               "name": "Agent Governance Toolkit",
@@ -1570,25 +1555,6 @@
                 "updated": "2026-08-12",
                 "snapshot": "2026-08-17"
               }
-            },
-            {
-              "name": "Verb Authority",
-              "repo": "yairsabag/verb-authority",
-              "desc": "Python gate and schema scanner that infers per-argument authority from tool schemas, tracks limited value provenance, and blocks untrusted agent data from authoring protected tool-call arguments before execution.",
-              "license": "Apache-2.0",
-              "status": [
-                "open_source"
-              ],
-              "flags": [
-                "early_stage"
-              ],
-              "note": "— **note:** its guarantee is scoped to per-argument authority under the documented provenance model.",
-              "related": [
-                {
-                  "label": "AgentLock",
-                  "url": "https://github.com/webpro255/agentlock"
-                }
-              ]
             },
             {
               "name": "h5i",
