@@ -852,6 +852,15 @@
               }
             },
             {
+              "name": "mcpbait",
+              "repo": "jankesec/mcpbait",
+              "desc": "Red teaming framework that proves whether an MCP-speaking agent can be hijacked by a rogue server; features 13 local attack modules (tool poisoning, memory persistence, markdown beacons) with in-process canary exfiltration detection and resilience scoring.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ]
+            },
+            {
               "name": "Agent Governance Toolkit",
               "repo": "microsoft/agent-governance-toolkit",
               "org": "Microsoft",
